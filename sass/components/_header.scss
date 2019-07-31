@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0);
+    z-index: 999;
+        
+    position: fixed;
+    top: 0;
+    height: 80px;
+    padding: 0 15px;
+    width: 100%;
+        
+    background-color: $color-lightgrey;
+    color: #000;
+      
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+        
+    transition: .5s ease all;
+      
+    
+h1 {
+    color: $color-yellow;
+    font-family: 'Avenir Next LT Pro Bold';
+    font-size: 32px;
+    padding: 15px 65px;
+    }
+
+    p {
+        color: $color-yellow;
+        line-height: 15px;
+    }
+
+    &__links {
+        margin-left: 10%; 
+        padding: 36px 65px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 15px;
+        color: $color-yellow;
+    }
+}

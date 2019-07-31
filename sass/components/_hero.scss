@@ -1,0 +1,25 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url(/images/anastasiia-rozumna-MfG04Fl7HQo-unsplash.jpg) center
+            no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    &__text {
+        display: flex;
+        align-items: center;
+
+        animation: fadeup 1.4s;
+
+        padding: 25px 95px;
+        color: $color-white;
+        width: 50%;
+    }
+}

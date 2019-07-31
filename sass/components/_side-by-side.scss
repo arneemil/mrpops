@@ -1,0 +1,46 @@
+.side-by-side {
+    display: flex;
+    padding: 200px 0 100px;
+
+    &--row-reverse {
+        flex-direction: row-reverse;
+        background-color: $color-lightgrey;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+
+        color: $color-yellow;
+
+    
+    &__wrapper {
+        max-width: 70%;
+    }
+    }
+
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 70vh;
+
+        img {
+            width: 520px;
+            box-shadow: 6px 2px 10px grey;
+            transition: all 0.3s ease-in-out 0s; 
+        }
+
+        img:hover { 
+            cursor: default;
+            transform: rotate(-5deg);
+            transition: all 0.3s ease-in-out 0s; 
+            width: 520px;
+        }
+    }
+}
